@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles.css">
+    <title>Подать заявку на вступление</title>
+</head>
+<body>
+    <header>
+        <a href="index.html"><img src="photo_2025-03-27_14-02-15.jpg" alt="Логотип"></a>
+        <h1>Подать заявку на вступление</h1>
+    </header>
+
+<img class="side-image" src="lei-feng-china.gif" >
+    <h2>Представьтесь</h2>
+    <form onsubmit="handleSubmit(event)">
+        <label for="name">Имя:</label>
+        <input type="text" id="name" name="name"><br><br>
+        
+        <label for="gender">Пол:</label>
+        <input type="radio" name="gender" value="male"> Мужчина
+        <input type="radio" name="gender" value="female"> Женщина<br><br>
+        
+        <label for="country">Страна:</label>
+        <select id="country">
+            <option value="ru">Россия</option>
+            <option value="us">США</option>
+            <option value="uk">Великобритания</option>
+	    <option value="uk">Китай</option>
+        </select><br><br>
+        
+        <input type="submit" value="Отправить">
+    </form>
+    
+    <script>
+        function handleSubmit(event) {
+            event.preventDefault(); // Предотвращает отправку формы
+            alert("Форма отправлена!");
+        }
+    </script>
+</body>
+</html>

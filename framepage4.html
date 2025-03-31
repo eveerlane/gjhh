@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles.css">
+    <title>Страница с окнами</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+            margin: 0;
+        }
+        .frame {
+            flex: 1;
+            border: 1px solid #000; /* Граница для каждого окна */
+        }
+        .horizontal {
+            display: flex;
+            flex: 1;
+        }
+        .vertical {
+            flex: 1;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <a href="index.html"><img src="photo_2025-03-27_14-02-15.jpg" alt="Логотип"></a>
+    </header>
+
+    <div class="frame vertical" style="background-color: lightblue;">
+        <h2>Оставь заявку еще раз!</h2>
+        <a href="about.html">Ссылка</a>
+    </div>
+    <div class="frame horizontal" style="background-color: lightgreen;">
+        <div class="frame" style="background-color: lightcoral;">
+            <h2Полезная литература:</h2>
+           <a href="memnaya_rossia2_1.pptx">Наш план!</a>
+		<br>
+	   <a href="Marx_Kapital.docx">Скачать библию</a> 
+		<br>
+		<a href="ждва.xlms">Враги народа!</a>
+        </div>
+        <div class="frame" style="background-color: lightyellow;">
+            <h2>Цитата вождя!</h2>
+            <p>Учение Маркса всесильно, потому что оно верно</p>
+        </div>
+    </div>
+</body>
+</html>

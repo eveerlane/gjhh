@@ -1,0 +1,33 @@
+/* styles.css */
+body {
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+}
+
+h1, h2, h3 {
+    color: #2c3e50;
+}
+
+p {
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    font-size: 40px;
+}
+
+a {
+    color: blue;
+    text-decoration: none;
+}
+
+/* Стили для заголовков */
+header img {
+    width: 50px; /* Размер картинки */
+}
+
+.container {
+    display: flex;
+}
+
+.side-image {
+    margin-right: 15px;
+}
